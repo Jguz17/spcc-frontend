@@ -1,0 +1,98 @@
+/*--------------------------
+  // Team Area
+--------------------------*/
+
+.creative-team-area {
+    &.bg-image {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.team-single-item {
+    position: relative;
+    margin-bottom: 30px;
+    &:hover {
+        .thumb {
+            &::after {
+                visibility: visible;
+            }
+            .social-link {
+                visibility: visible;
+            }
+        }
+    }
+    .thumb {
+        display: inline-block;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        position: relative;
+        z-index: 0;
+        cursor: pointer;
+        text-align: center;
+        overflow: hidden;
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            visibility: hidden;
+            background-image: linear-gradient( -68deg, rgba(45, 28, 180, .8) 0%, rgba(108, 12, 228, .8) 99%);
+            z-index: 1;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-image: url(../img/team/bg.png);
+            z-index: 1;
+        }
+        .social-link {
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            z-index: 2;
+            visibility: hidden;
+            ul {
+                margin: 0;
+                padding: 0;
+                li {
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 50%;
+                    border: 1px solid $white;
+                    text-align: center;
+                    line-height: 40px;
+                    list-style-type: none;
+                    color: $white;
+                    &:hover {
+                        color: $white;
+                        border: none;
+                        transition: all 0.3s ease-in;
+                        background-image: linear-gradient( 0deg, rgb(28, 123, 252) 0%, rgb(0, 234, 234) 100%);
+                    }
+                }
+            }
+        }
+    }
+    .content {
+        text-align: center;
+        margin-top: 20px;
+        .title {
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+    }
+}

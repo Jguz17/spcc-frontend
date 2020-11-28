@@ -1,0 +1,173 @@
+/*---------------------------------------
+    ## Button
+---------------------------------------*/
+
+.btn-wrapper {
+    display: block;
+    .boxed-btn {
+        background-color: var(--secondary-color);
+        color: #111;
+        display: inline-block;
+        padding: 16px 40px;
+        border-radius: 0;
+        text-transform: uppercase;
+        text-align: center;
+        @include transition($transition);
+        font-weight: 600;
+        font-family: var(--heading-font);
+        &.white {
+            &:hover {
+                background-color: $white;
+                color: var(--main-color-one);
+            }
+        }
+        &.outer-btn {
+            border: 1px solid transparent;
+            &:hover {
+                background-color: transparent;
+                color: var(--main-color-one);
+                border: 1px solid var(--main-color-one);
+            }
+        }
+        &.blank {
+            background-color: transparent;
+            border: 1px solid $white;
+            &.reverse-color {
+                background-color: transparent;
+                border: 2px solid var(--main-color-one);
+                color: var(--main-color-one);
+                &:hover {
+                    background-color: var(--main-color-one);
+                    color: $white;
+                    border-color: var(--main-color-one);
+                }
+            }
+            &:hover {
+                background-color: var(--secondary-color);
+                color: $white;
+                border-color: var(--main-color-one);
+            }
+        }
+        &:hover {
+            background-color: var(--main-color-two);
+            color: $white;
+        }
+        &.btn-rounded {
+            border-radius: 30px;
+        }
+        &.reverse-color {
+            background-color: var(--secondary-color);
+            &:hover {
+                background-color: var(--main-color-one);
+            }
+        }
+    }
+    .request-btn {
+        background-color: var(--main-color-two);
+        color: $white;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 23px;
+        display: inline-block;
+        text-transform: uppercase;
+        font-family: var(--heading-font);
+        padding: 28px 45px;
+        min-width: 160px;
+        height: 100%;
+        text-align: center;
+        @include transition($transition);
+        // border-right: 5px solid var(--secondary-color);
+        clip-path: polygon(0 0, 100% 0%, 100% 99%, 15% 100%);
+        position: relative;
+        i {
+            font-size: 15px;
+            margin-left: 5px;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 100%;
+            top: 0;
+            right: 0;
+            background-color: var(--main-color-two);
+            transition: all 0.3s ease-in;
+        }
+        &:hover {
+            &:after {
+                width: 100%;
+                background-color: var(--main-color-one);
+                z-index: -1;
+            }
+            &.style-01 {
+                color: $white;
+            }
+        }
+        &.style-01 {
+            background-color: var(--secondary-color);
+            color: #111;
+        }
+        &.style-02 {
+            background-color: var(--main-color-one);
+            color: $white;
+            line-height: 70px;
+            padding: 0 40px;
+        }
+    }
+    .read-btn {
+        color: var(--main-color-one);
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+}
+
+.close-btn {
+    position: absolute;
+    right: -15px;
+    top: -20px;
+    width: 30px;
+    height: 30px;
+    color: $white;
+    border-color: var(--main-color-one);
+    background-color: var(--main-color-one);
+    transition: all 0.3s ease-in;
+    padding: 0;
+    text-align: center;
+}
+
+.desktop-center {
+    text-align: center;
+}
+
+.desktop-left {
+    text-align: left;
+}
+
+.desktop-right {
+    text-align: right;
+}
+
+@media only screen and (max-width: 768px) {
+    .tablet-center {
+        text-align: center;
+    }
+    .tablet-left {
+        text-align: left;
+    }
+    .tablet-right {
+        text-align: right;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .mobile-center {
+        text-align: center;
+    }
+    .mobile-left {
+        text-align: left;
+    }
+    .mobile-right {
+        text-align: right;
+    }
+}

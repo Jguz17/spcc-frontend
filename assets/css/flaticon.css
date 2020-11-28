@@ -1,0 +1,471 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 25/08/2019 15:18
+  	*/
+	
+	@font-face {
+	    font-family: "Flaticon";
+	    src: url("../fonts/Flaticon.eot");
+	    src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"), url("../fonts/Flaticon.woff2") format("woff2"), url("../fonts/Flaticon.woff") format("woff"), url("../fonts/Flaticon.ttf") format("truetype"), url("../fonts/Flaticon.svg#Flaticon") format("svg");
+	    font-weight: normal;
+	    font-style: normal;
+	}
+	
+	@media screen and (-webkit-min-device-pixel-ratio:0) {
+	    @font-face {
+	        font-family: "Flaticon";
+	        src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+	    }
+	}
+	
+	[class^="flaticon-"]:before,
+	[class*=" flaticon-"]:before,
+	[class^="flaticon-"]:after,
+	[class*=" flaticon-"]:after {
+	    font-family: Flaticon;
+	    font-style: normal;
+	}
+	
+	.flaticon-clock:before {
+	    content: "\f100";
+	}
+	
+	.flaticon-quote-left:before {
+	    content: "\f101";
+	}
+	
+	.flaticon-magnifying-glass:before {
+	    content: "\f102";
+	}
+	
+	.flaticon-shopping-bag:before {
+	    content: "\f103";
+	}
+	
+	.flaticon-right-quote:before {
+	    content: "\f104";
+	}
+	
+	.flaticon-dish:before {
+	    content: "\f105";
+	}
+	
+	.flaticon-dustpan:before {
+	    content: "\f106";
+	}
+	
+	.flaticon-gloves:before {
+	    content: "\f107";
+	}
+	
+	.flaticon-wash:before {
+	    content: "\f108";
+	}
+	
+	.flaticon-cleaning:before {
+	    content: "\f109";
+	}
+	
+	.flaticon-liquid-soap:before {
+	    content: "\f10a";
+	}
+	
+	.flaticon-sweep:before {
+	    content: "\f10b";
+	}
+	
+	.flaticon-water-tap:before {
+	    content: "\f10c";
+	}
+	
+	.flaticon-toilet-paper:before {
+	    content: "\f10d";
+	}
+	
+	.flaticon-vacuum-cleaner:before {
+	    content: "\f10e";
+	}
+	
+	.flaticon-play:before {
+	    content: "\f10f";
+	}
+	
+	.flaticon-left-arrow:before {
+	    content: "\f110";
+	}
+	
+	.flaticon-right-arrow:before {
+	    content: "\f111";
+	}
+	
+	.flaticon-right-arrow-1:before {
+	    content: "\f112";
+	}
+	
+	.flaticon-map:before {
+	    content: "\f113";
+	}
+	
+	.flaticon-right:before {
+	    content: "\f114";
+	}
+	
+	.flaticon-shopping-cart:before {
+	    content: "\f115";
+	}
+	
+	.flaticon-mail:before {
+	    content: "\f116";
+	}
+	
+	.flaticon-search:before {
+	    content: "\f117";
+	}
+	
+	.flaticon-search-1:before {
+	    content: "\f118";
+	}
+	
+	.flaticon-pin:before {
+	    content: "\f119";
+	}
+	
+	.flaticon-booking:before {
+	    content: "\f11a";
+	}
+	
+	.flaticon-quote:before {
+	    content: "\f11b";
+	}
+	
+	.flaticon-lawn-mower:before {
+	    content: "\f11c";
+	}
+	
+	.flaticon-garbage-truck:before {
+	    content: "\f11d";
+	}
+	
+	.flaticon-glass-cleaning:before {
+	    content: "\f11e";
+	}
+	
+	.flaticon-shower:before {
+	    content: "\f11f";
+	}
+	
+	.flaticon-sink:before {
+	    content: "\f120";
+	}
+	
+	.flaticon-vacuum:before {
+	    content: "\f121";
+	}
+	
+	.flaticon-garbage:before {
+	    content: "\f122";
+	}
+	
+	.flaticon-cleaner:before {
+	    content: "\f123";
+	}
+	
+	.flaticon-download:before {
+	    content: "\f124";
+	}
+	
+	.flaticon-phone:before {
+	    content: "\f125";
+	}
+	
+	.flaticon-right-quote-1:before {
+	    content: "\f126";
+	}
+	
+	.flaticon-mail-1:before {
+	    content: "\f127";
+	}
+	
+	.flaticon-facebook:before {
+	    content: "\f128";
+	}
+	
+	.flaticon-paint-brush:before {
+	    content: "\f129";
+	}
+	
+	.flaticon-map-1:before {
+	    content: "\f12a";
+	}
+	
+	.flaticon-map-2:before {
+	    content: "\f12b";
+	}
+	
+	.flaticon-24-hours:before {
+	    content: "\f12c";
+	}
+	
+	.flaticon-appointment:before {
+	    content: "\f12d";
+	}
+	
+	.flaticon-map-3:before {
+	    content: "\f12e";
+	}
+	
+	.flaticon-mail-2:before {
+	    content: "\f12f";
+	}
+	
+	.flaticon-call:before {
+	    content: "\f130";
+	}
+	
+	.flaticon-twitter:before {
+	    content: "\f131";
+	}
+	
+	.flaticon-information:before {
+	    content: "\f132";
+	}
+	
+	.flaticon-shopping-cart-1:before {
+	    content: "\f133";
+	}
+	
+	.flaticon-dust-pan:before {
+	    content: "\f134";
+	}
+	
+	.flaticon-brush:before {
+	    content: "\f135";
+	}
+	
+	.flaticon-brush-1:before {
+	    content: "\f136";
+	}
+	
+	.flaticon-dust-pan-1:before {
+	    content: "\f137";
+	}
+	
+	.flaticon-sprayer:before {
+	    content: "\f138";
+	}
+	
+	.flaticon-vacuum-1:before {
+	    content: "\f139";
+	}
+	
+	.flaticon-calendar:before {
+	    content: "\f13a";
+	}
+	
+	.flaticon-map-4:before {
+	    content: "\f13b";
+	}
+	
+	.flaticon-shopping-cart-2:before {
+	    content: "\f13c";
+	}
+	
+	.flaticon-time:before {
+	    content: "\f13d";
+	}
+	
+	.flaticon-24h:before {
+	    content: "\f13e";
+	}
+	
+	.flaticon-online-service:before {
+	    content: "\f13f";
+	}
+	
+	.flaticon-place:before {
+	    content: "\f140";
+	}
+	
+	.flaticon-vacuum-2:before {
+	    content: "\f141";
+	}
+	
+	.flaticon-mop:before {
+	    content: "\f142";
+	}
+	
+	.flaticon-broom:before {
+	    content: "\f143";
+	}
+	
+	.flaticon-washing-hands:before {
+	    content: "\f144";
+	}
+	
+	.flaticon-feather-duster:before {
+	    content: "\f145";
+	}
+	
+	.flaticon-call-1:before {
+	    content: "\f146";
+	}
+	
+	.flaticon-technician:before {
+	    content: "\f147";
+	}
+	
+	.flaticon-communications:before {
+	    content: "\f148";
+	}
+	
+	.flaticon-communications-1:before {
+	    content: "\f149";
+	}
+	
+	.flaticon-broom-1:before {
+	    content: "\f14a";
+	}
+	
+	.flaticon-closet:before {
+	    content: "\f14b";
+	}
+	
+	.flaticon-clean-house:before {
+	    content: "\f14c";
+	}
+	
+	.flaticon-dish-washing:before {
+	    content: "\f14d";
+	}
+	
+	.flaticon-maid:before {
+	    content: "\f14e";
+	}
+	
+	.flaticon-steam-iron:before {
+	    content: "\f14f";
+	}
+	
+	.flaticon-water-tap-1:before {
+	    content: "\f150";
+	}
+	
+	.flaticon-vacuum-cleaner-1:before {
+	    content: "\f151";
+	}
+	
+	.flaticon-car:before {
+	    content: "\f152";
+	}
+	
+	.flaticon-wipe:before {
+	    content: "\f153";
+	}
+	
+	.flaticon-wash-1:before {
+	    content: "\f154";
+	}
+	
+	.flaticon-play-button:before {
+	    content: "\f155";
+	}
+	
+	.flaticon-clock-1:before {
+	    content: "\f156";
+	}
+	
+	.flaticon-left-arrow-1:before {
+	    content: "\f157";
+	}
+	
+	.flaticon-right-chevron:before {
+	    content: "\f158";
+	}
+	
+	.flaticon-left-arrow-2:before {
+	    content: "\f159";
+	}
+	
+	.flaticon-newsletter:before {
+	    content: "\f15a";
+	}
+	
+	.flaticon-schedule:before {
+	    content: "\f15b";
+	}
+	
+	.flaticon-electronics:before {
+	    content: "\f15c";
+	}
+	
+	.flaticon-calendar-1:before {
+	    content: "\f15d";
+	}
+	
+	.flaticon-treasure:before {
+	    content: "\f15e";
+	}
+	
+	.flaticon-verified:before {
+	    content: "\f15f";
+	}
+	
+	.flaticon-speech-bubble:before {
+	    content: "\f160";
+	}
+	
+	.flaticon-send:before {
+	    content: "\f161";
+	}
+	
+	.flaticon-clean:before {
+	    content: "\f162";
+	}
+	
+	.flaticon-glove:before {
+	    content: "\f163";
+	}
+	
+	.flaticon-washing-hands-1:before {
+	    content: "\f164";
+	}
+	
+	.flaticon-cleaning-spray:before {
+	    content: "\f165";
+	}
+	
+	.flaticon-rubber-gloves:before {
+	    content: "\f166";
+	}
+	
+	.flaticon-pin-1:before {
+	    content: "\f167";
+	}
+	
+	.flaticon-pin-2:before {
+	    content: "\f168";
+	}
+	
+	.flaticon-handwash:before {
+	    content: "\f169";
+	}
+	
+	.flaticon-gloves-1:before {
+	    content: "\f16a";
+	}
+	
+	.flaticon-handwash-1:before {
+	    content: "\f16b";
+	}
+	
+	.flaticon-handwash-2:before {
+	    content: "\f16c";
+	}
+	
+	.flaticon-rubber-gloves-1:before {
+	    content: "\f16d";
+	}
+	
+	.flaticon-cart:before {
+	    content: "\f16e";
+	}

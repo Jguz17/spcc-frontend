@@ -1,0 +1,31 @@
+.single-support-item {
+    display: flex;
+    align-self: flex-start;
+    .img-wrapper {
+        width: calc(100% / 2);
+        .bg-image {
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+    .content {
+        background-color: var(--main-color-two);
+        text-align: center;
+        padding: 95px 20px 98px;
+        width: 50%;
+        &.style-01 {
+            background-color: #14b3e4;
+        }
+        .title {
+            font-size: 24px;
+            color: $white;
+            font-weight: 700;
+        }
+        p {
+            max-width: 280px;
+            color: $white;
+            margin: auto;
+        }
+    }
+}

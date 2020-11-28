@@ -1,0 +1,70 @@
+/*----------------------------
+    Top Bar
+----------------------------*/
+
+.topbar-area {
+    background-color: var(--main-color-one);
+    &.style-01 {
+        position: relative;
+        z-index: 0;
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 35%;
+            height: 100%;
+            background-color: var(--main-color-one);
+            z-index: -1;
+            clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+        }
+    }
+}
+
+.topbar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    div {
+        .boxed-btn {
+            padding: 15px 30px;
+            background-color: var(--main-color-one);
+            display: inline-block;
+            color: $white;
+            @include transition($transition);
+            &:hover {
+                background-color: var(--secondary-color);
+                color: $white;
+            }
+        }
+    }
+    &.style-01 {
+        padding: 0;
+        .right-contnet {
+            display: flex;
+            .social-link {
+                display: flex;
+                align-items: center;
+            }
+            div {
+                margin-left: 30px;
+                .boxed-btn {
+                    padding: 15px 30px;
+                    background-color: var(--secondary-color);
+                    display: inline-block;
+                    color: #111;
+                    @include transition($transition);
+                    i {
+                        font-size: 15px;
+                        margin-left: 5px;
+                    }
+                    &:hover {
+                        background-color: var(--main-color-two);
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+// Why Us
+.why-choose-use-area {
+    &.bg-image {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.why-choose-use-area-wrapper {
+    &.m-top {
+        margin-top: -220px;
+        position: relative;
+        z-index: 1;
+    }
+}

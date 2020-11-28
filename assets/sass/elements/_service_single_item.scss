@@ -1,0 +1,24 @@
+// service-single-item 
+.service-single-item {
+    display: flex;
+    margin-bottom: 20px;
+    .icon {
+        font-size: 50px;
+        line-height: 60px;
+        color: var(--main-color-two);
+        margin-right: 30px;
+        display: inline-block;
+        transition: all 500ms;
+    }
+    .content {
+        flex: 1;
+        .title {
+            font-size: 16px;
+            line-height: 30px;
+            font-weight: 500;
+            color: var(--main-color-two);
+            transition: all 500ms;
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,118 @@
+    // probide Area
+    .provide-single-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        &.bg-image {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .provide-single-item {
+            width: calc(100% / 4);
+            background-color: rgba( #2196f3, .8);
+            &.style-01 {
+                background-color: rgba( #1e80db, .8);
+            }
+            .content {
+                .btn-wrapper {
+                    padding-top: 20px;
+                    .boxed-btn {
+                        padding: 8px 25px;
+                        color: #111;
+                    }
+                }
+            }
+        }
+    }
+    
+    .provide-single-item {
+        padding: 30px;
+        background-color: var(--main-color-one);
+        &.style-01 {
+            background-color: #29e2c1;
+        }
+        &.style-02 {
+            background-color: #2196f3;
+        }
+        &.style-03 {
+            margin-top: 80px;
+            padding: 0;
+            background-color: transparent;
+            .icon {
+                font-size: 35px;
+                line-height: 70px;
+                width: 70px;
+                height: 70px;
+                text-align: center;
+                border-radius: 50%;
+                color: #fff;
+                background-color: var(--main-color-two);
+                margin-bottom: 18px;
+                z-index: 5;
+                left: 50%;
+                transition: all 500ms;
+                &.style-01 {
+                    background-color: var(--main-color-one);
+                }
+                &.style-02 {
+                    background-color: #0fd2ef;
+                }
+            }
+            .content {
+                .title {
+                    color: var(--heading-color);
+                }
+                p {
+                    margin: 0;
+                    color: var(--paragraph-color);
+                }
+                ul {
+                    li {
+                        color: var(--heading-color);
+                        i {
+                            color: var(--heading-color);
+                        }
+                    }
+                }
+            }
+        }
+        .icon {
+            color: $white;
+            font-size: 60px;
+            line-height: 60px;
+            margin-bottom: 10px;
+        }
+        .content {
+            .title {
+                color: $white;
+                font-size: 18px;
+                font-weight: 700;
+                margin-bottom: 15px;
+            }
+            p {
+                color: $white;
+                margin-bottom: 15px;
+                max-width: 285px;
+                margin: auto;
+            }
+            ul {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                margin-top: 15px;
+                li {
+                    color: $white;
+                    +li {
+                        margin-top: 5px;
+                    }
+                    i {
+                        color: var(--secondary-color);
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }

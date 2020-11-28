@@ -1,0 +1,212 @@
+/*----------------------------
+    Header Bottom Area
+-----------------------------*/
+
+.heading-top-content {
+    .section-title {
+        display: flex;
+        .title {
+            font-weight: 600;
+            padding-right: 80px;
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 30%;
+                transform: translateY(-50%);
+                width: 2px;
+                height: 60px;
+                background-color: #eee;
+            }
+        }
+        p {
+            padding-left: 80px;
+            font-size: 18px;
+            max-width: 550px;
+        }
+    }
+}
+
+.content-wrapper {
+    display: flex;
+    .left-content {
+        width: 33.3%;
+    }
+    .description-tab-content {
+        display: flex;
+        height: 100%;
+        .text-content-tab {}
+    }
+    .right-content {
+        padding-left: 30px;
+        padding-top: 40px;
+        .section-title {
+            .subtitle {
+                font-size: 12px;
+                font-family: var(--heading-font);
+                color: var(--main-color-two);
+            }
+            .title {
+                font-weight: 600;
+                max-width: 350px;
+            }
+        }
+        .content {
+            display: flex;
+            ul {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                margin-right: 30px;
+                li {
+                    a {
+                        i {
+                            margin-right: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .serivce-bg {
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        margin-top: 16px;
+        height: 100%;
+        width: 100%;
+        min-height: 350px;
+    }
+}
+
+.header-bottom-inner {}
+
+.header-bottom-wrap {
+    background-color: var(--secondary-color);
+    padding: 30px 0 40px 0;
+}
+
+.header-bottom-wrapper {
+    &.m-top {
+        margin-top: -81px;
+        position: relative;
+        z-index: 1;
+    }
+    &.m-top-02 {
+        margin-top: -120px;
+        position: relative;
+        z-index: 1;
+    }
+    &.m-top-03 {
+        margin-top: -118px;
+        position: relative;
+        z-index: 1;
+    }
+    .provide-content {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 100%;
+        padding: 65px;
+        .section-title {
+            .title {
+                font-size: 48px;
+                line-height: 58px;
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+}
+
+.nav-tabs {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    .nav-item {
+        width: 100%;
+        .nav-link {
+            border: none;
+            border-radius: 0px;
+        }
+    }
+}
+
+.service-item-list {
+    display: flex;
+    align-items: center;
+    padding: 20px 0px;
+    background-color: var(--main-color-one);
+    transition: all 0.3s ease-in;
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 5px;
+        height: 100%;
+        background-color: var(--secondary-color);
+        transform: scale(1, 0);
+        transition: all 0.3s ease-in;
+    }
+    &.style-01 {
+        &.active,
+        &:hover {
+            background-color: #132675;
+            &::before {
+                display: none;
+            }
+            .service-icon {
+                color: var(--main-color-two);
+            }
+            .service-title {
+                .title {
+                    color: var(--main-color-two);
+                }
+            }
+        }
+    }
+    &.active,
+    &:hover {
+        background-color: $white;
+        &::before {
+            transform: scale(1, 1);
+        }
+        .service-icon {
+            color: var(--main-color-two);
+        }
+        .service-title {
+            .title {
+                color: var(--heading-color);
+            }
+        }
+    }
+    .service-icon {
+        font-size: 40px;
+        line-height: 40px;
+        padding: 0px 15px;
+        margin-right: 15px;
+        color: $white;
+        border-right: 1px solid #2c3e88;
+        transition: all 0.3s ease-in;
+    }
+    .service-title {
+        .title {
+            font-weight: 500;
+            font-size: 14px;
+            text-transform: capitalize;
+            color: $white;
+            transition: all 0.3s ease-in;
+            &.active {
+                color: var(--heading-color);
+            }
+        }
+    }
+}

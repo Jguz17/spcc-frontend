@@ -1,0 +1,134 @@
+// Eco Area
+.eco-friendly-area {
+    position: relative;
+    z-index: 0;
+    &.bg-image {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .bg-img-01 {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-position: center;
+        background-size: cover;
+        width: 64%;
+        height: 92%;
+        z-index: -1;
+        background-repeat: no-repeat;
+    }
+    .bg-img-02 {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-size: cover;
+        background-position: center;
+        width: 55%;
+        z-index: -2;
+        height: 100%;
+        background-repeat: no-repeat;
+    }
+}
+
+.eco-friendly-area-wrapper {
+    position: relative;
+    z-index: 0;
+}
+
+.eco-content {
+    &.style-01 {
+        padding-right: 100px;
+    }
+    .content {
+        padding-top: 20px;
+        &.style-01 {
+            ul {
+                li {
+                    color: var(--paragraph-color);
+                }
+            }
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            li {
+                color: $white;
+                margin-bottom: 10px;
+                a {
+                    i {
+                        margin-right: 10px;
+                        color: var(--main-color-two);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.we-available {
+    padding-top: 66px;
+    p {
+        color: rgba($white, 0.7);
+        margin-bottom: 30px;
+    }
+}
+
+.available-item {
+    background-color: var(--main-color-two);
+    display: flex;
+    padding: 35px 40px 30px;
+    &.style-01 {
+        background-color: $white;
+        padding: 20px 0;
+        .icon {
+            width: 55px;
+            height: 55px;
+            line-height: 55px;
+            font-size: 35px;
+            text-align: center;
+            background-color: var(--main-color-two);
+            color: $white;
+            border-radius: 50%;
+        }
+        .content {
+            padding-top: 0;
+            span {
+                color: var(--main-color-one);
+            }
+        }
+    }
+    .icon {
+        color: $white;
+        font-size: 45px;
+        line-height: 45px;
+        margin-right: 15px;
+    }
+    .content {
+        span {
+            color: $white;
+            font-size: 14px;
+            line-height: 24px;
+            font-family: var(--heading-font);
+        }
+        p {
+            color: var(--secondary-color);
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 34px;
+            font-family: var(--heading-font);
+            margin-bottom: 0;
+        }
+    }
+}
+
+.eco-friendly-img {
+    &.bg-image {
+        width: 100%;
+        height: 100%;
+        min-height: 350px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}

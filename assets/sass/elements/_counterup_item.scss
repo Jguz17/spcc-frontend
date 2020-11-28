@@ -1,0 +1,101 @@
+/*----------------------------
+    Counterup Item
+----------------------------*/
+
+.counter-area {
+    &.bg-image {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &.m-top {
+        margin-top: -180px;
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.single-counterup-block-with-img {
+    display: inline-block;
+    .thumb {
+        position: relative;
+        z-index: 0;
+        img {
+            border-bottom-right-radius: 50px;
+        }
+        .hover {
+            position: absolute;
+            left: 5%;
+            top: 5%;
+            width: 90%;
+            background-color: $white;
+            height: 90%;
+            border-bottom-right-radius: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .title {
+                font-size: 18px;
+                line-height: 28px;
+                font-family: var(--body-font);
+            }
+            .count-num {
+                font-size: 120px;
+                line-height: 130px;
+                color: var(--main-color-one);
+                font-family: var(--heading-font);
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.single-counterup-01 {
+    display: flex;
+    position: relative;
+    z-index: 0;
+    margin-bottom: 30px;
+     ::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border-bottom: 15px solid var(--secondary-color);
+        border-left: 15px solid transparent;
+    }
+    &.style-01 {
+        .icon {
+            color: $white;
+        }
+        .content {
+            .title {
+                color: $white;
+            }
+            .count-wrap {
+                color: $white;
+            }
+        }
+    }
+    .icon {
+        font-size: 45px;
+        // line-height: 45px;
+        color: var(--main-color-two);
+        margin-right: 20px;
+    }
+    .content {
+        .title {
+            font-size: 14px;
+            line-height: 28px;
+            color: var(--heading-color);
+            font-family: var(--body-font);
+        }
+        .count-wrap {
+            font-size: 48px;
+            line-height: 58px;
+            font-weight: 600;
+            color: var(--heading-color);
+            font-family: var(--heading-font);
+            margin-bottom: 0;
+        }
+    }
+}

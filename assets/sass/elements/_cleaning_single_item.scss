@@ -1,0 +1,50 @@
+// Single Event Item
+.cleaning-single-item {
+    text-align: center;
+    transition: all 500ms;
+    &:hover {
+        .content {
+            background-color: var(--main-color-one);
+            .title {
+                color: $white;
+            }
+            p {
+                color: $white;
+            }
+        }
+    }
+    .icon {
+        font-size: 30px;
+        line-height: 60px;
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        border-radius: 50%;
+        color: $white;
+        background-color: var(--main-color-two);
+        margin-bottom: 18px;
+        margin-top: -30px;
+        z-index: 5;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all 500ms;
+    }
+    .content {
+        background-color: $white;
+        padding: 40px 20px 20px 20px;
+        transition: all 0.3s ease-in-out;
+        .title {
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 34px;
+            color: var(--heading-color);
+            margin-bottom: 16px;
+            transition: all 500ms;
+        }
+        p {
+            transition: all 500ms;
+        }
+    }
+}

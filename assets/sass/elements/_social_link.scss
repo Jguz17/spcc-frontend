@@ -1,0 +1,46 @@
+.social-link {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            color: $white;
+            display: inline-block;
+            font-size: 15px;
+            transition: all 0.3s ease-in;
+            +li {
+                margin-left: 10px;
+            }
+            &:hover {
+                color: var(--secondary-color);
+            }
+        }
+    }
+    &.style-01 {
+        ul {
+            li {
+                color: var(--paragraph-color);
+                &:hover {
+                    color: var(--main-color-one);
+                }
+            }
+        }
+    }
+    &.style-02 {
+        ul {
+            li {
+                font-size: 14px;
+                font-weight: 600;
+                display: inline-block;
+                color: var(--main-color-one);
+                +li {
+                    margin-left: 5px;
+                }
+                i {
+                    color: var(--main-color-two);
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}

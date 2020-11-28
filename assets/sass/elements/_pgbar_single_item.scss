@@ -1,0 +1,36 @@
+// Progress Single Item
+.progress-item {
+    .single-progressbar {
+        margin-bottom: 30px;
+        color: var(--main-color-one);
+        .subtitle {
+            font-size: 14px;
+            color: #111;
+            line-height: 24px;
+        }
+        .progressbar {
+            width: 100%;
+            margin-top: 5px;
+            margin-bottom: 25px;
+            position: relative;
+            width: 100%;
+            background-color: #c8cbd4;
+            .proggress {
+                height: 5px;
+                width: 10px;
+            }
+            .percentCount {
+                position: absolute;
+                right: 0;
+                top: 0;
+                padding: 5px 10px;
+                font-size: 12px;
+                font-weight: 500;
+                float: right;
+                margin-top: -42px;
+                clear: both;
+                color: #777777;
+            }
+        }
+    }
+}
