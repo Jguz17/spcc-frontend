@@ -42,7 +42,11 @@ License: You must have a valid license purchased only from themeforest(the above
   </head>
   <!-- END: Head-->
   <body class="vertical-layout vertical-menu-collapsible page-header-dark vertical-modern-menu preload-transitions 2-columns  app-page " data-open="click" data-menu="vertical-modern-menu" data-col="2-columns">
-
+    <script>
+      if (!localStorage.token) {
+        location.href = '../pages/Login.html'
+      }
+    </script>
     <!-- BEGIN: Header-->
     <header class="page-topbar" id="header">
       <div class="navbar navbar-fixed"> 
