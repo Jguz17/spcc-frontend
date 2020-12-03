@@ -7,6 +7,7 @@ let loginForm = document.querySelector('#login')
 let loginEmail = document.querySelector('#login-email')
 let loginPassword = document.querySelector('#login-password')
 let loginSubmit = document.querySelector('#login-submit')
+let logout = document.querySelector('#logout')
 
 let userAuth = {
     token: localStorage.getItem('token'),
@@ -47,9 +48,8 @@ if (form) {
                     loadUser()
     
                     setTimeout(function(){
-                        location.href = "../../index.html";
+                        location.href = "../../admin.html";
                      },100)
-                    // window.location.href = '../../index.html'
                 } else if (!data.token) {
     
                     resetFields()
@@ -97,7 +97,7 @@ if (loginForm) {
                     loadUser()
     
                     setTimeout(function(){
-                        location.href = "../../index.html";
+                        location.href = "../../admin.html";
                      },100)
                 } else {
                     resetFields()
@@ -106,10 +106,18 @@ if (loginForm) {
             })
         }
     })
-} else if (!loginEmail.value && !loginPassword.value) {
-    console.log('Enter data')
-}
+} 
 
+// logout user
+if (logout) {
+
+    logout.addEventListener('click', () => {
+        resetFields()
+        setTimeout(function(){
+            location.href = "../../pages/Login.html";
+         },100)
+    })
+}
 // load user
 const loadUser = () => {
     if (localStorage.token) {
@@ -131,7 +139,7 @@ const loadUser = () => {
 const resetFields = (error) => {
     localStorage.removeItem('token')
     userAuth.isAuthenticated = false
-    userAuth.error = error.message
+    userAuth.error = null
     userAuth.token = null
     userAuth.user = null
 
@@ -142,8 +150,3 @@ const resetFields = (error) => {
     loginEmail = document.querySelector('#login-email')
     loginPassword = document.querySelector('#login-password')
 }
-
-// document.querySelector('#trigger').addEventListener('click', () => {
-//     console.log(userAuth)
-//     console.log(localStorage)
-// })
