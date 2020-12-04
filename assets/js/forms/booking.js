@@ -5,10 +5,10 @@ document.querySelector('#booking-form').addEventListener('submit', (e) => {
     const email = document.querySelector('#booking-email').value;
     const phone = document.querySelector('#booking-phone').value;
     const address = document.querySelector('#booking-address').value;
-    const datetime = document.querySelector('#booking-datetime').value;
+    const bookingDate = document.querySelector('#booking-datetime').value;
     const message = document.querySelector('#booking-message').value;
 
-    const bookingObj = ({ user_id: 1, name, email, phone, address, datetime, message })
+    const bookingObj = ({ name, email, phone, address, bookingDate, message })
 
     async function postBooking(url, obj) {
         const response = await fetch(url, {
@@ -21,7 +21,7 @@ document.querySelector('#booking-form').addEventListener('submit', (e) => {
         return response.json(); 
     }
 
-    postBooking('https://spcc-api.herokuapp.com/api/v1/bookings', bookingObj)
+    postBooking('https://spcc-backend.herokuapp.com/api/bookings', bookingObj)
     .then(data => {
         console.log(data); 
     });

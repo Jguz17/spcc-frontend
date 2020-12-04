@@ -90,7 +90,7 @@ if (loginForm) {
             .then((res) => res.json())
             .then((data) => {
                 if (data.token) {
-                    localStorage.setItem('token', JSON.stringify(data.token))
+                    localStorage.setItem('token', data.token)
                     userAuth.token = data.token
                     userAuth.isAuthenticated = true
                     userAuth.error = null
