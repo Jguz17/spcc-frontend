@@ -1,19 +1,41 @@
-Product Name
----------------
-Materialize - Material Design Admin Template
+# Superior Pristine Cleaning Company Frontend
 
+This repo holds an admin dashboard and a client site for regular users. I used html, css, and bootstrap for this project.
 
-Product Description
--------------------
-The #1 selling material design admin template. Google Material Design Inspired UI with gradient colors, responsive design and amazing support are the reasons of our customers to fallen in love, making it the most trusted and complete Material Design Admin Template on the market.
+I built this site for a client who needed a better way to manager her cleaning business.
 
+![Image](https://i.imgur.com/jFFP6sA.png)
 
-Online Documentation
---------------------
-You will find documentation in your downloaded zip file from ThemeForest. You can access documentation online as well.
-Documentation URL: https://pixinvent.com/materialize-material-design-admin-template/html/documentation/
+A normal user can visit the live version at: https://superiorpristinecleaningcompany.netlify.app/.
 
+The client site allows a regular user to send a message to the spcc dashboard and also submit a booking request.
 
-Change Log
-----------
-Read CHANGELOG.md file
+![Image](https://i.imgur.com/8OJURmu.png)
+
+To access the admin panel, you can go to: https://superiorpristinecleaningcompany.netlify.app/admin.
+
+Use the following credentials to mess around with the app:
+
+email: admin@gmail.com
+password: 123456
+
+## Installation
+
+After you have cloned this repo, in your cli run: 
+
+```bash
+npm install -g live-server
+
+live-server
+```
+
+This will open up the frontend!
+
+## Usage
+
+I made this app for the client because they needed something more efficient than their standard client management.
+
+You can checkout the backend repo here: https://github.com/Jguz17/spcc-backend
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
